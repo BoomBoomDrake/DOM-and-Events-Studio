@@ -42,4 +42,8 @@ window.addEventListener('load', function() {
             rocket.style.bottom = `0px`;
         }
     })
+    
+    upBtn.addEventListener('click', function() {
+        rocket.style.bottom = `${parseInt(rocket.style.bottom) + 10}px`
+    })
 })
