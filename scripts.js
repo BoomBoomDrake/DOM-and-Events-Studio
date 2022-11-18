@@ -1,6 +1,10 @@
 window.addEventListener('load', function() {
-    const takeOffBtn = document.querySelector('#takeoff')
+    const takeOffBtn = document.querySelector('#takeoff');
+    const flightStatus = document.querySelector('#flightStatus');
+
     takeOffBtn.addEventListener('click', function() {
-        confirm('Confirm that the shuttle is ready for take off.');
+        if (confirm('Confirm that the shuttle is ready for take off.')) {
+            flightStatus.innerHTML = `Shuttle in flight`;
+        }
     })
 })
