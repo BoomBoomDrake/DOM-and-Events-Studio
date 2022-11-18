@@ -58,6 +58,8 @@ window.addEventListener('load', function() {
     })
 
     leftBtn.addEventListener('click', function() {
+        if (rocket.style.left == `-20px`) return
+
         rocket.style.left = `${parseInt(rocket.style.left) - 10}px`
     })
 })
