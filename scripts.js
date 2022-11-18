@@ -6,6 +6,10 @@ window.addEventListener('load', function() {
     const rocket = document.querySelector('#rocket');
     const landBtn = document.querySelector('#landing');
     const abortBtn = document.querySelector('#missionAbort');
+    const upBtn = document.querySelector('#up');
+    const downBtn = document.querySelector('#down');
+    const leftBtn = document.querySelector('#left');
+    const rightBtn = document.querySelector('#right');
     //Initial rocket position, centered.
     rocket.style.position = 'absolute';
     rocket.style.bottom = '0px';
