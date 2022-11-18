@@ -64,6 +64,7 @@ window.addEventListener('load', function() {
     })
 
     rightBtn.addEventListener('click', function() {
+        if (rocket.style.left == `290px`) return
         rocket.style.left = `${parseInt(rocket.style.left) + 10}px`;
     })
 })
