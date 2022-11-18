@@ -52,8 +52,12 @@ window.addEventListener('load', function() {
 
     downBtn.addEventListener('click', function() {
         if (spaceShuttleHeight.innerHTML == 0 || rocket.style.bottom == '0px') return
-        
+
         spaceShuttleHeight.innerHTML = Number(spaceShuttleHeight.innerHTML) - 10000;
         rocket.style.bottom = `${parseInt(rocket.style.bottom) - 10}px`;
+    })
+
+    leftBtn.addEventListener('click', function() {
+        rocket.style.left = `${parseInt(rocket.style.left) - 10}px`
     })
 })
