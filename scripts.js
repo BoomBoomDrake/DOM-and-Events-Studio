@@ -44,6 +44,8 @@ window.addEventListener('load', function() {
     })
     
     upBtn.addEventListener('click', function() {
+        if (rocket.style.bottom === `250px`) return
+        
         spaceShuttleHeight.innerHTML = Number(spaceShuttleHeight.innerHTML) + 10000; 
         rocket.style.bottom = `${parseInt(rocket.style.bottom) + 10}px`
     })
