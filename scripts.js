@@ -16,6 +16,7 @@ window.addEventListener('load', function() {
             flightStatus.innerHTML = `Shuttle in flight`;
             shuttleBackground.style.backgroundColor = 'blue';
             spaceShuttleHeight.innerHTML = Number(spaceShuttleHeight.innerHTML) + 10000;
+            rocket.style.bottom = `${parseInt(rocket.style.bottom) + 10}px`;
         }
     })
 })
