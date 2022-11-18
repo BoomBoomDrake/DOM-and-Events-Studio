@@ -4,6 +4,7 @@ window.addEventListener('load', function() {
     const shuttleBackground = document.querySelector('#shuttleBackground');
     const spaceShuttleHeight = document.querySelector('#spaceShuttleHeight');
     const rocket = document.querySelector('#rocket');
+    const landBtn = document.querySelector('#landing');
     //Initial rocket position, centered.
     rocket.style.position = 'absolute';
     rocket.style.bottom = '0px';
@@ -18,5 +19,13 @@ window.addEventListener('load', function() {
             spaceShuttleHeight.innerHTML = Number(spaceShuttleHeight.innerHTML) + 10000;
             rocket.style.bottom = `${parseInt(rocket.style.bottom) + 10}px`;
         }
+    })
+
+    landBtn.addEventListener('click', function() {
+        alert(`The shuttle is landing. Landing gear engaged.`);
+        flightStatus.innerHTML = `The shuttle has landed.`;
+        shuttleBackground.style.backgroundColor = 'green';
+        spaceShuttleHeight.innerHTML = 0;
+        rocket.style.bottom = `0px`;
     })
 })
