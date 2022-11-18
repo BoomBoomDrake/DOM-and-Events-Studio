@@ -5,6 +5,7 @@ window.addEventListener('load', function() {
     const spaceShuttleHeight = document.querySelector('#spaceShuttleHeight');
     const rocket = document.querySelector('#rocket');
     const landBtn = document.querySelector('#landing');
+    const abortBtn = document.querySelector('#missionAbort');
     //Initial rocket position, centered.
     rocket.style.position = 'absolute';
     rocket.style.bottom = '0px';
@@ -26,6 +27,6 @@ window.addEventListener('load', function() {
         flightStatus.innerHTML = `The shuttle has landed.`;
         shuttleBackground.style.backgroundColor = 'green';
         spaceShuttleHeight.innerHTML = 0;
-        rocket.style.bottom = `0px`;
+        rocket.style.bottom = `0px`;  
     })
 })
